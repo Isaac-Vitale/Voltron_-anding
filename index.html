@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d41ba4589a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@800&display=swap" rel="stylesheet">
+    <title>Voltron</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/voltron_logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Serie</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contacto</button></a>
+    </header>
+
+    <section class="bg_1">
+        <img src="./assets/voltron_1.png" alt="voltron_1">
+        <h2>Voltron Legendary Defender</h2>
+        <div class="parrafo_1">
+            <p>Voltron Legendary Defender se anunció por primera vez como una expansión del acuerdo de varios años
+                existente
+                entre Netflix y DreamWorks Animation. También se han producido libros de historietas para la serie. El
+                logotipo oficial se lanzó el 8 de febrero de 2016, mientras que la primera temporada completa se lanzó
+                el 10
+                de junio de 2016.La última y última temporada del programa fue la octava temporada, que se lanzó el 14
+                de
+                diciembre de2018. Después de los lanzamientos originales de Netflix en línea, el programa se televisó
+                más
+                tarde en ciertos canales como CHRGD a partir de 2019.</p>
+        </div>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+
+    </section>
+    <section class="bg_2">
+        <h2>PERSONAJES</h2>
+        <div class="contenedor-img">
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Lance.png" alt="Lance">
+                    </figure>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Keith.png" alt="Keith">
+                    </figure>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Shiro.png" alt="Shiro">
+                    </figure>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Hunk.png" alt="Hunk">
+                    </figure>
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Pidge.png" alt="Pidge">
+                    </figure>
+
+                </a>
+            </div>
+            <div class="box-img">
+                <a href="#">
+                    <figure>
+                        <img src="./assets/Allura.png" alt="Allura">
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <span class="SkewedThree"></span>
+        <span class="SkewedFour"></span>
+    </section>
+    <section class="bg_3">
+        <div class="main">
+            <div class="info_serie">
+                <h1>SOBRE LA SERIE</h1>
+                <P>Cinco adolescentes terrícolas -Keith, Lance, Hunk, Pidge y Shiro- se ven envueltos en una serie de batallas
+                    intergalácticas y se convierten en la última línea de defensa para Arus y otros planetas contra la malvada
+                    fuerza alienígena liderada por el Rey Zarkon.</P>
+                <a href="https://www.netflix.com/watch/80103554?trackId=255824129&tctx=0%2C0%2CNAPA%40%40%7Cb499e040-a2d6-49f5-ba57-a6ea05163f13-223795066_titles%2F1%2F%2Fvoltron%2F0%2F0%2CNAPA%40%40%7Cb499e040-a2d6-49f5-ba57-a6ea05163f13-223795066_titles%2F1%2F%2Fvoltron%2F0%2F0%2Cunknown%2C%2Cb499e040-a2d6-49f5-ba57-a6ea05163f13-223795066%7C1%2CtitlesResults"
+                    target="_blank" class="btn_2"><button>Mirar en <span>Netflix</span></button></a>
+            </div>
+            <img src="./assets/voltron_2.png" alt="Voltron 2">
+        </div>
+    </section>
+    <section class="bg_4">
+        <div class="contenedor_contacto">
+            <form>
+                <h1>CONTÁCTAME</h1>
+                <input type="text" value="Nombre" placeholder="Nombre">
+                <input type="text" value="Email" placeholder="Email">
+                <textarea>Mensaje</textarea>
+                <button class="btn_3">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <h3>Sígueme en instagram
+        <i class="fa-brands fa-instagram"></i>
+        </h3>
+    </footer>
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll', function () {
+            const value1 = -15 + window.scrollY / 45;
+            const value2 = 15 + window.scrollY / -45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)";
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)";
+        })
+    </script>
+</body>
+
+</html>
